@@ -13,3 +13,18 @@ a:hover {
     color: #64B5F6;
 }
 
+header {
+  background: #F9A825;
+}
+
+nav > a {
+  display: inline-block;
+  color: #263238;
+  padding: 1em;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  background: #F57F17;
+  color: #263238;
+}
