@@ -35,5 +35,7 @@ h2 {
 
 footer {
   border-top: 1px solid #CFD8DC;
-  padding: 4px
+  padding: 4px;
+  margin: 4px;
+  font-size: 18px;
 }
