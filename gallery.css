@@ -1,0 +1,6 @@
+input img {
+  visibility: hidden;
+}
+input:checked img {
+  visibility: visible;
+}
