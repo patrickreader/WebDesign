@@ -43,6 +43,10 @@ footer svg {
   transform: translate(0px, 0.25em);
 }
 
+footer details {
+  float: right;
+}
+
 details img {
   float: right;
   margin-top: 40px;
