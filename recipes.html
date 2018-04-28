@@ -21,7 +21,18 @@
       </header>
       <main>
         <h1>Recipes</h1>
-        <details>
+        <div id="r">
+          <a href="#pie" onclick="document.getElementById('pie').open = true;">
+            <img src="./img/pie.jpg"/>
+          </a>
+          <a href="#biscuit" onclick="document.getElementById('biscuit').open = true;">
+            <img src="./img/biscuit.jpg"/>
+          </a>
+          <a href="#lasagna" onclick="document.getElementById('lasagna').open = true;">
+            <img src="./img/lasagna.jpg"/>
+          </a>
+        </div>
+        <details id="pie" open>
           <img src="./img/pie.jpg"/>
           <summary><h2>Apple Pie</h2></summary>
           <h3>Ingredients</h3>
@@ -45,7 +56,7 @@
             <li>Brush a little water around the pastry rim and lay the pastry lid over the apples pressing the edges together to seal. Trim the edge with a sharp knife and make 5 little slashes on top of the lid for the steam to escape. (Can be frozen at this stage.) Brush it all with the egg white and sprinkle with caster sugar. Bake for 40-45 mins, until golden, then remove and let it sit for 5-10 mins. Sprinkle with more sugar and serve while still warm from the oven.</li>
           </ol>
         </details>
-        <details>
+        <details id="biscuit" open>
           <img src="./img/biscuit.jpg"/>
           <summary><h2>Biscuits</h2></summary>
           <h3>Ingredients</h3>
@@ -69,7 +80,7 @@
             <li>Bake for 15-20 minutes, rotating trays half way through</li>
           </ol>
         </details>
-        <details>
+        <details id="lasagna" open>
           <img src="./img/lasagna.jpg"/>
           <summary><h2>Lasagna</h2></summary>
           <h3>Ingredients</h3>

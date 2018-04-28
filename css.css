@@ -63,7 +63,12 @@ summary h2 {
   display: inline;
 }
 
-details[open] summary {
+main details[open] summary {
   padding: 2px;
   border-bottom: 1px solid #CFD8DC;
+}
+
+#r img {
+  width: 33%;
+  max-height: 75vh;
 }
