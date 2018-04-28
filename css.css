@@ -17,16 +17,20 @@ nav {
   background: #F9A825;
 }
 
-nav > a {
+nav a {
   display: inline-block;
   color: #263238;
   padding: 1em;
   text-decoration: none;
 }
 
-nav > a:hover {
+nav a:hover {
   background: #F57F17;
   color: #263238;
+}
+
+header {
+  margin-bottom: 1em;
 }
 
 h2 {

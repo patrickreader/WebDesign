@@ -1,38 +1,38 @@
-.slide-wrapper {
-  width: 2912px;
-  -webkit-animation: slide 18s ease infinite;
-  animation: slide 18s ease infinite;
-}
-
-@@keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -2184px;}
-  90% {margin-left: -2184px;}
+.wrapper {
+  width: 8690px;
+  -webkit-animation: slide 30s ease infinite;
 }
 
 @-webkit-keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -2184px;}
-  90% {margin-left: -2184px;}
+  5% {margin-left: 0px;}
+  10% {margin-left: -100%;}
+  15% {margin-left: -100%;}
+  20% {margin-left: -200%;}
+  25% {margin-left: -200%;}
+  30% {margin-left: -300%;}
+  35% {margin-left: -300%;}
+  40% {margin-left: -400%;}
+  45% {margin-left: -400%;}
+  50% {margin-left: -500%;}
+  55% {margin-left: -500%;}
+  60% {margin-left: -600%;}
+  65% {margin-left: -600%;}
+  70% {margin-left: -700%;}
+  75% {margin-left: -700%;}
+  80% {margin-left: -800%;}
+  85% {margin-left: -800%;}
+  90% {margin-left: -900%;}
+  95% {margin-left: -900%;}
 }
 
 .slide {
   float: left;
-  height: 510px;
-  width: 728px;
+  height: 869px;
 }
 
 #slideshow {
   overflow: hidden;
-  height: 510px;
-  width: 728px;
+  max-height: 80vh;
+  width: 869px;
   margin: 0 auto;
 }
