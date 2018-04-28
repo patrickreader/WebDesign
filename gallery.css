@@ -3,6 +3,10 @@
   -webkit-animation: slide 30s ease infinite;
 }
 
+h1 {
+  display: inline;
+}
+
 @-webkit-keyframes slide {
   5% {margin-left: 0px;}
   10% {margin-left: -100%;}
