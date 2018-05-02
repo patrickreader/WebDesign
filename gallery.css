@@ -32,6 +32,9 @@ h1 {
 .slide {
   float: left;
   height: 869px;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50%;
 }
 
 #slideshow {
