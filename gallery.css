@@ -4,7 +4,7 @@
 }
 
 h1 {
-  display: inline;
+  margin: auto 0;
 }
 
 @-webkit-keyframes slide {
@@ -36,7 +36,7 @@ h1 {
 
 #slideshow {
   overflow: hidden;
-  max-height: 80vh;
+  max-height: 77vh;
   width: 869px;
   margin: 0 auto;
 }
