@@ -1,8 +1,5 @@
 var flag_url = "https://raw.githubusercontent.com/lipis/flag-icon-css/master/flags/4x3/";
-countries = [
-    ""
-]
-codes = {
+countries = {
     "ad.svg": "Andorra",
     "ae.svg": "United Arab Emirates",
     "af.svg": "Afghanistan",
