@@ -25,15 +25,19 @@
         <h3>A flag guessing game!</h3>
         <em>Work In Progress</em>
         <div id="game">
+            <p id="score"><b>Score: </b>0</p>
             <img id="flag" src="./img/loading.png"/>
             <table>
                 <tr>
-                    <td><a class="option" id="option-1">Loading</a></td>
-                    <td><a class="option" id="option-2">Loading</a></td>
+                    <td><a class="option" id="option-1" onclick="answer(1);">Loading</a></td>
+                    <td><a class="option" id="option-2" onclick="answer(2);">Loading</a></td>
                 </tr>
                 <tr>
-                    <td><a class="option" id="option-3">Loading</a></td>
-                    <td><a class="option" id="option-4">Loading</a></td>
+                    <td><img id="resp" src="./img/nope.svg"/></td>
+                </tr>
+                <tr>
+                    <td><a class="option" id="option-3" onclick="answer(3);">Loading</a></td>
+                    <td><a class="option" id="option-4" onclick="answer(4);">Loading</a></td>
                 </tr>
             </table>
         </div>

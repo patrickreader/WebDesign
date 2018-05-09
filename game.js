@@ -274,6 +274,10 @@ function shuffle(a) {
 function finit(){
     question();
 }
+
+var order;
+var score = 0;
+
 function question(){
     var right_answer = getRandom(Object.keys(countries), 1);
     var wrong_answers = getRandom(Object.keys(countries), 3);
@@ -291,7 +295,7 @@ function question(){
     }
 
     // set names
-    var order = shuffle([1, 2, 3, 4]);
+    order = shuffle([1, 2, 3, 4]);
     document.getElementById('option-'+order[0]).innerText = countries[right_answer];
     document.getElementById('option-'+order[1]).innerText = countries[wrong_answers[0]];
     document.getElementById('option-'+order[2]).innerText = countries[wrong_answers[1]];
@@ -306,4 +310,10 @@ function question(){
     // set flag icon
     document.getElementById('flag').src = "./img/flags/" + right_answer_slug + ".svg";
 
+}
+
+function answer(n){
+    if (n ===order[0]) console.log("correct");
+    else console.log("incorrect");
+     question();
 }
