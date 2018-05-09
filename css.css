@@ -16,8 +16,7 @@ a:hover {
 nav {
   background: #F9A825;
   position: fixed;
-  width: 100%;
-  overflow: hidden;
+  width: calc(100% - 1em);
 }
 
 nav a {
