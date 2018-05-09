@@ -17,7 +17,7 @@ nav {
   background: #F9A825;
   position: fixed;
   width: 100%;
-  margin: 1em 0;
+  overflow: hidden;
 }
 
 nav a {
