@@ -22,7 +22,7 @@
       <main>
         <h1>Contact</h1>
         <b>Note:</b><em> you can't actually contact me on this page.</em> Speak to me in person!
-        <form name="form">
+        <form name="form" id="form">
           <input type="text" placeholder="Name"/><br />
           <input required type="email" placeholder="Email"/><br />
           <textarea form="form" placeholder="Text"></textarea><br />
@@ -30,7 +30,7 @@
           <label for="terms">I agree to the <a href="javascript:" onclick="t(1)">terms</a>.</label><br />
           <input type="submit"/>
         </form>
-        <div id="shade" hidden onclick="t(1);"></div>
+        <div id="shade" hidden onclick="t(0);"></div>
         <div id="terms" hidden>
           <div>
             <h2>Terms for Contact</h2>

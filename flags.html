@@ -39,14 +39,16 @@
                 </tr>
             </table>
         </div>
-        <div id="shade" hidden onclick="t(1);"></div>
+        <div id="shade" hidden onclick="t(0);question()"></div>
         <div id="terms" hidden>
           <div>
-            <h2>Wrong!</h2>
-            <a href="javascript:" onclick="t(0)">×</a>
+            <h2>You Failed!</h2>
+            <a href="javascript:" onclick="t(0);question()">×</a>
           </div>
           <p>
-            <b>High Score:</b><span id="high">0</span>
+            Score: <b id="high">0</b><br/>
+            The correct answer was: <b id="actually"></b>
+          </p>
         </div>
         <script type="text/javascript">finit();</script>
     </main>

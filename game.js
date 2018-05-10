@@ -311,13 +311,17 @@ function question(){
 }
 
 function answer(n){
-    if (n ===order[0]) {console.log("correct");score++}
+    if (n ===order[0]) {
+        console.log("correct");
+        score++;
+        question();
+    }
     else {
         console.log("incorrect");
-        document.getElementById('high').innerText=score.toString();
+        document.getElementById('high').innerText = score.toString();
+        document.getElementById('actually').innerText = document.getElementById('option-'+order[0]).innerText;
         score=0;
-        t(1);
+        t(1); // show modal
     }
     document.getElementById('num').innerText=score.toString();
-    question();
 }
