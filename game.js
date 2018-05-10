@@ -312,7 +312,12 @@ function question(){
 
 function answer(n){
     if (n ===order[0]) {console.log("correct");score++}
-    else {console.log("incorrect");score=0;t(1)}
-    document.getElementById('num').innerText=score;
+    else {
+        console.log("incorrect");
+        document.getElementById('high').innerText=score.toString();
+        score=0;
+        t(1);
+    }
+    document.getElementById('num').innerText=score.toString();
     question();
 }
