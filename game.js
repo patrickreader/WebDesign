@@ -24,7 +24,6 @@ countries = {
     bh: "Bahrain",
     bi: "Burundi",
     bj: "Benin",
-    bl: "Saint-Barthélemy",
     bm: "Bermuda",
     bn: "Brunei Darussalam",
     bo: "Bolivia",
@@ -77,7 +76,7 @@ countries = {
     fr: "France",
     ga: "Gabon",
     en: "England",
-    ix: "Northern Island",
+    ix: "Northern Ireland",
     tx: "Scotland",
     gb: "Great Britain",
     wl: "Wales",
@@ -239,7 +238,6 @@ countries = {
     vi: "US Virgin Islands",
     vn: "Vietnam",
     vu: "Vanuatu",
-    wf: "Wallis and Futuna Islands",
     ws: "Samoa",
     ye: "Yemen",
     za: "South Africa",
@@ -314,7 +312,7 @@ function question(){
 
 function answer(n){
     if (n ===order[0]) {console.log("correct");score++}
-    else {console.log("incorrect");score--}
+    else {console.log("incorrect");score=0}
     document.getElementById('num').innerText=score;
     question();
 }
