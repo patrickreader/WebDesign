@@ -289,13 +289,7 @@ function question(){
     (wrong_answers.indexOf("mc") > -1 && right_answer === "id")) {
         right_answer = getRandom(Object.keys(countries), 1);
     }
-
-    // set names
     order = shuffle([1, 2, 3, 4]);
-    document.getElementById('option-'+order[0]).innerText = countries[right_answer];
-    document.getElementById('option-'+order[1]).innerText = countries[wrong_answers[0]];
-    document.getElementById('option-'+order[2]).innerText = countries[wrong_answers[1]];
-    document.getElementById('option-'+order[3]).innerText = countries[wrong_answers[2]];
 
     var right_answer_slug = right_answer;
     // fix slug
@@ -305,7 +299,21 @@ function question(){
     }
     // set flag icon
     document.getElementById('flag').src = "./img/flags/" + right_answer_slug + ".svg";
+    document.getElementById("flag").onload = (function(){setOptions(
+        right_answer,
+        wrong_answers[0],
+        wrong_answers[1],
+        wrong_answers[2]
+    )});
+}
 
+function setOptions(right, wrong1, wrong2, wrong3) {
+    console.log(countries);
+    // set names
+    document.getElementById('option-'+order[0]).innerText = countries[right];
+    document.getElementById('option-'+order[1]).innerText = countries[wrong1];
+    document.getElementById('option-'+order[2]).innerText = countries[wrong2];
+    document.getElementById('option-'+order[3]).innerText = countries[wrong3];
 }
 
 function answer(n){
