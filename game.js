@@ -110,7 +110,7 @@ countries = {
     ir: "Iran",
     is: "Iceland",
     it: "Italy",
-    je: "hersey",
+    je: "Jersey",
     jm: "Jamaica",
     jo: "Jordan",
     jp: "Japan",
