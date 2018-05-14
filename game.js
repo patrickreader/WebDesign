@@ -271,53 +271,38 @@ function finit(){
     question();
 }
 
-var order;
+var correct_index;
 var score = 0;
 
 function question(){
-    var right_answer = getRandom(Object.keys(countries), 1);
-    var wrong_answers = getRandom(Object.keys(countries), 3);
+    var possible_answers = getRandom(Object.keys(countries), 4);
 
     // fix for monaco indonesia dupe
-    if (wrong_answers.indexOf("mc") > -1 && wrong_answers.indexOf("id") > -1) {
-        wrong_answers = getRandom(Object.keys(countries), 3);
+    if (possible_answers.indexOf("mc") > -1 && possible_answers.indexOf("id") > -1) {
+        var possible_answers = getRandom(Object.keys(countries), 4);
     }
-
-    // fix for monaco indonesia dupe
-    while(wrong_answers.indexOf(right_answer) > -1 ||
-    (right_answer === "mc" && wrong_answers.indexOf("id") > -1) ||
-    (wrong_answers.indexOf("mc") > -1 && right_answer === "id")) {
-        right_answer = getRandom(Object.keys(countries), 1);
-    }
-    order = shuffle([1, 2, 3, 4]);
-
-    var right_answer_slug = right_answer;
-    // fix slug
-    if(right_answer.length > 2) {
-        right_answer_slug = right_answer.substr(0, 2) + "-" +
-            right_answer.substr(2, 3);
-    }
+    correct_index = shuffle([1, 2, 3, 4])[0];
+    
     // set flag icon
-    document.getElementById('flag').src = "./img/flags/" + right_answer_slug + ".svg";
+    document.getElementById('flag').src = "./img/flags/" + possible_answers[correct_index] + ".svg";
     document.getElementById("flag").onload = (function(){setOptions(
-        right_answer,
-        wrong_answers[0],
-        wrong_answers[1],
-        wrong_answers[2]
+        possible_answers[0],
+        possible_answers[1],
+        possible_answers[2],
+        possible_answers[3],
     )});
 }
 
 function setOptions(right, wrong1, wrong2, wrong3) {
-    console.log(countries);
     // set names
-    document.getElementById('option-'+order[0]).innerText = countries[right];
-    document.getElementById('option-'+order[1]).innerText = countries[wrong1];
-    document.getElementById('option-'+order[2]).innerText = countries[wrong2];
-    document.getElementById('option-'+order[3]).innerText = countries[wrong3];
+    document.getElementById('option-1').innerText = countries[right];
+    document.getElementById('option-2').innerText = countries[wrong1];
+    document.getElementById('option-3').innerText = countries[wrong2];
+    document.getElementById('option-4').innerText = countries[wrong3];
 }
 
 function answer(n){
-    if (n ===order[0]) {
+    if (n === correct_index) {
         console.log("correct");
         score++;
         question();
