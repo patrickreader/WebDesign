@@ -232,7 +232,7 @@ countries = {
     va: "Vatican City",
     vc: "Saint Vincent and Grenadines",
     ve: "Venezuela",
-    vg: "British Virgin Island",
+    vg: "British Virgin Islands",
     vi: "US Virgin Islands",
     vn: "Vietnam",
     vu: "Vanuatu",
