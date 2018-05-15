@@ -302,7 +302,7 @@ function setOptions(right, wrong1, wrong2, wrong3) {
 }
 
 function answer(n){
-    if (n === correct_index) {
+    if (n === (correct_index+1)) {
         console.log("correct");
         score++;
         question();
