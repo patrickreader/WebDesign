@@ -281,7 +281,7 @@ function question(){
     if (possible_answers.indexOf("mc") > -1 && possible_answers.indexOf("id") > -1) {
         var possible_answers = getRandom(Object.keys(countries), 4);
     }
-    correct_index = shuffle([1, 2, 3, 4])[0];
+    correct_index = shuffle([1, 2, 3, 0])[0];
     
     // set flag icon
     document.getElementById('flag').src = "./img/flags/" + possible_answers[correct_index] + ".svg";
@@ -310,7 +310,7 @@ function answer(n){
     else {
         console.log("incorrect");
         document.getElementById('high').innerText = score.toString();
-        document.getElementById('actually').innerText = document.getElementById('option-'+order[0]).innerText;
+        document.getElementById('actually').innerText = document.getElementById('option-'+(correct_index+1)).innerText;
         score=0;
         t(1); // show modal
     }
