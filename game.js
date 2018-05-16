@@ -267,7 +267,6 @@ function shuffle(a) {
     return a;
 }
 function finit(){
-    alert('init');
     question();
 }
 
