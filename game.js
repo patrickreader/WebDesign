@@ -30,7 +30,6 @@ countries = {
     br: "Brazil",
     bs: "Bahamas",
     bt: "Bhutan",
-    bv: "Bouvet Island",
     bw: "Botswana",
     by: "Belarus",
     bz: "Belize",
