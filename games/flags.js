@@ -283,7 +283,7 @@ function question(){
     correct_index = shuffle([1, 2, 3, 0])[0];
     
     // set flag icon
-    document.getElementById('flag').src = "./img/flags/" + possible_answers[correct_index] + ".svg";
+    document.getElementById('flag').src = "../img/flags/" + possible_answers[correct_index] + ".svg";
     document.getElementById("flag").onload = (function(){setOptions(
         possible_answers[0],
         possible_answers[1],
