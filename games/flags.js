@@ -147,7 +147,6 @@ countries = {
     mn: "Mongolia",
     mo: "Macao",
     mp: "Northern Mariana Islands",
-    mq: "Martinique",
     mr: "Mauritania",
     ms: "Montserrat",
     mt: "Malta",
