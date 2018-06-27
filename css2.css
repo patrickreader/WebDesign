@@ -3,11 +3,12 @@
 
 html {
     font-family: "Noto Sans", "Segoe UI", "Trebuchet MS", Arial, sans-serif;
-    color: #CFD8DC;
-    background: red;
+    color: #263238;
+    /*background: #263238;*/
+    background: #CFD8DC;
 }
 a {
-    color: #BBDEFB;
+    color: #085391;
 }
 a:hover {
     color: #64B5F6;
@@ -35,11 +36,11 @@ header {
 }
 
 h2 {
-  border-bottom: 1px solid #CFD8DC;
+  border-bottom: 1px solid #263238;
 }
 
 footer {
-  border-top: 1px solid #CFD8DC;
+  border-top: 1px solid #263238;
   padding: 0.4em;
   margin-top: 1em;
 }
@@ -70,7 +71,7 @@ summary h2 {
 
 main details[open] summary {
   padding: 2px;
-  border-bottom: 1px solid #CFD8DC;
+  border-bottom: 1px solid #263238;
 }
 
 #r img {
@@ -78,15 +79,15 @@ main details[open] summary {
   max-height: 75vh;
 }
 
-input, textarea {
-  background: #37474F;
+input, textarea, button {
+  background: #a5b7c0;
   border: 1px solid #546E7A;
   padding: 2px 4px;
-  color: #CFD8DC;
+  color: #263238;
 }
 
 input[type="button"], input[type="submit"], button {
-  background: #546E7A;
+  background: #a5b7c0;
   margin-top: 0.4em;
 }
 
@@ -108,7 +109,7 @@ form {
   transform: translate(-50%, -50%);
   background: #37474F;
   z-index: 9;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #263238;
   padding: 1em;
 }
 
@@ -118,7 +119,7 @@ form {
 }
 
 #terms div {
-  border-bottom: 1px solid #CFD8DC;
+  border-bottom: 1px solid #263238;
 }
 
 #terms div a {
