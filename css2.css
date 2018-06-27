@@ -139,3 +139,7 @@ form {
   opacity: 0.7;
   background: #333;
 }
+
+#lite {
+   border: 1px solid #F9A825; 
+}
