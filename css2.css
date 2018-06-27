@@ -143,3 +143,7 @@ form {
 #lite {
    border: 1px solid #F9A825; 
 }
+
+#game {
+    border: 1px solid black;
+}
