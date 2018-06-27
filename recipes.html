@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <title>GCSE Web Design | Patrick Reader</title>
-      <link href="./css.css" type="text/css" rel="stylesheet"/>
+      <link id="theme" href="./css1.css" type="text/css" rel="stylesheet"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--[if IE]><style>#c{display:none}</style><![endif]-->
 </head>
@@ -130,8 +130,13 @@
              by Patrick Reader.</a>
           <details title="Excludes images">
             <summary>Licensed under GPL v3</summary>
-            <iframe style="background: #CFD8DC" src="https://www.gnu.org/licenses/gpl-3.0-standalone.html" />
+            <iframe style="background: #CFD8DC" src="https://www.gnu.org/licenses/gpl-3.0-standalone.html"></iframe>
           </details>
+          <br>
+          <span id="span">Switch Theme:
+            <button id="dark" onclick="document.getElementById('theme').href = './css1.css'">Dark</button>
+            <button id="lite" onclick="document.getElementById('theme').href = './css2.css'">Light</button>
+          </span>
       </footer>
     </div>
   </body>
