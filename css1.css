@@ -78,7 +78,7 @@ main details[open] summary {
   max-height: 75vh;
 }
 
-input, textarea {
+input, textarea, button {
   background: #37474F;
   border: 1px solid #546E7A;
   padding: 2px 4px;
