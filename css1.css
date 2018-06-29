@@ -139,6 +139,6 @@ form {
   background: #333;
 }
 
-#dark {
+#dark, #dark:selected {
    border: 1px solid #F9A825; 
 }
