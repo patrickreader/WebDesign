@@ -140,7 +140,7 @@ form {
   background: #333;
 }
 
-#lite {
+#lite, #lite:selected {
    border: 1px solid #F9A825; 
 }
 
